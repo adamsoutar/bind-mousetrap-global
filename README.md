@@ -26,7 +26,7 @@ addGlobalBinds(mousetrap)
 // This shortcut will fire even if the user has an input focused
 mousetrap.bindGlobal('mod+s', saveDocument)
 // This one won't
-mousetrap.bind('n', newDocumet)
+mousetrap.bind('n', newDocument)
 ```
 
 ## License note
