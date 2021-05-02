@@ -1,6 +1,6 @@
 {
   "name": "bind-mousetrap-global",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A version of mousetrap-global-bind in an easy-to-use module",
   "main": "index.js",
   "scripts": {
