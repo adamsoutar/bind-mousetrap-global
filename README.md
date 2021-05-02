@@ -28,3 +28,7 @@ mousetrap.bindGlobal('mod+s', saveDocument)
 // This one won't
 mousetrap.bind('n', newDocumet)
 ```
+
+## License note
+
+This is a rewrite inspired by similar packages from  @ccampbell and @Elvynia. It does not contain any of their code.
