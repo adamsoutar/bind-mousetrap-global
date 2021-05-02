@@ -1,24 +1,24 @@
-export default function addGlobalBinds (Mousetrap) {
+export default function addGlobalBinds (mousetrap) {
   const globals = new Set()
-  const originalCB = Mousetrap.protoype.stopCallback
+  const originalCB = mousetrap.prototype.stopCallback
 
-  Mousetrap.prototype.bindGlobal = (keys, cB, action) => {
-    this.bind(keys, cB, action)
+  mousetrap.bindGlobal = (keys, cB, action) => {
+    mousetrap.bind(keys, cB, action)
 
     if (Array.isArray(keys)) {
       for (const k of keys) globals.add(k)
     } else globals.add(keys)
   }
 
-  Mousetrap.prototype.unbindGlobal = (keys, action) => {
-    this.unbind(keys, action)
+  mousetrap.unbindGlobal = (keys, action) => {
+    mousetrap.unbind(keys, action)
 
     if (Array.isArray(keys)) {
       for (const k of keys) globals.delete(k)
     } else globals.delete(keys)
   }
 
-  Mousetrap.prototype.stopCallback = (...args) => {
+  mousetrap.prototype.stopCallback = (...args) => {
     if (globals.has(args[2]) || globals.has(args[3])) return false
     return originalCB(...args)
   }
