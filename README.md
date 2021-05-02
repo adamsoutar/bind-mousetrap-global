@@ -31,4 +31,4 @@ mousetrap.bind('n', newDocumet)
 
 ## License note
 
-This is a rewrite inspired by similar packages from  @ccampbell and @Elvynia. It does not contain any of their code.
+This is a rewrite inspired by similar packages from [ccampbell](https://github.com/ccampbell/mousetrap/tree/master/plugins/global-bind) and [Elvynia](https://github.com/Elvynia/mousetrap-global-bind). It does not contain any of their code.
