@@ -1,0 +1,22 @@
+{
+  "name": "mousetrap-input-bind",
+  "version": "1.0.0",
+  "description": "A version of mousetrap-global-bind in an easy-to-use module",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamsoutar/mousetrap-input-bind.git"
+  },
+  "author": "Adam Soutar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamsoutar/mousetrap-input-bind/issues"
+  },
+  "homepage": "https://github.com/adamsoutar/mousetrap-input-bind#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
